@@ -1,0 +1,65 @@
+/*
+Invoice Simple Template
+Created by Ed Molyneux
+
+*/
+/*=========================== TYPOGRAPHY =========================*/
+
+#invoice{font-family: Helvetica, Arial, Verdana, sans-serif !important; font-size:11px; } 
+#Main #invoice h1 {margin: 0;color: #555;font-size: 24px;text-transform: uppercase;}
+#Main #invoice h2, #Main #invoice h3 {color:#000; text-transform: none;font-family: Helvetica, Arial, Verdana, sans-serif !important}
+#invoice h2 {margin: 10px 0;font-size: 14pt;}
+#invoice-amount td, th {font-size: 9pt;}
+#invoice-header #company-address {text-align: right; font-size:12px;}
+#invoice #client-details, #invoice-info  p, #invoice #invoice-other, #invoice #payment-details {}
+#invoice-info h2, #invoice-info h3 {margin: 0; font-weight: normal;}
+#invoice-info h2{text-transform:uppercase}
+#invoice-info h3 {font-size:12pt;}
+#invoice #invoice-info p {margin-top:0}
+#invoice-info #payment-total{display:none}
+#comments {font-weight:bold;margin-top:15px;}
+
+#invoice-promo{text-align:center; border:1px solid #000;}
+
+/*=========================== LAYOUT =========================*/
+
+#invoice{padding:0 1cm 1cm 1cm; }
+#invoice-header .logo {float:left;}
+#invoice-header{margin-top:0.3cm; border-bottom:1px solid #000;padding-bottom:10px; overflow:hidden}
+* html #invoice-header {height:1%}
+#invoice-blank-header {margin-top: 1.6cm;}
+#company-address {margin: 0; padding: 0; width:350px; float:right}
+#invoice-info{margin: 0.7cm 0 20px 0; /*width:100%; float:left; text-align:right*/}
+#client-details {/*margin:0.7cm 0 20px 2.5cm;float:right;width:250px*/}   /* Positioned to appear in a standard envelope window when printed */
+#invoice-other {text-align: right; float: right;width:250px; }
+
+#invoice #payment-details, #invoice #invoice-promo{margin:20px 0;}
+
+#invoice-amount {margin: 1em 0; clear: both; }
+#invoice h1#company-name {display:block;}
+
+#comments{clear:both;}
+#comments ol{list-style-type:lower-latin; border:1px solid #000; font-weight:normal; padding:5px;}
+#comments ol li{margin-left:20px;}
+/*=========================== TABLES =========================*/
+
+#invoice table#invoice-amount { border-collapse:collapse; width:100%;clear:both;}
+#invoice-amount th {white-space: nowrap;padding: 1px 2px 0 5px; font-weight: bold;background: #FFF; border-top:1px solid #000; border-bottom: solid 1px #000; border-left: solid 1px #000;}
+#invoice-amount th.first{border-left:none;}
+#invoice-amount tr.odd{background: #EEE;}
+#invoice-amount td {margin: 0;padding: 2px 5px 2px 5px; vertical-align: top; font-size:11px;}
+#invoice-amount td.item_r{text-align: right;}
+#invoice-amount td.item_c{text-align: center;}
+#invoice-amount td.item_l{text-align: left;white-space: normal;}
+#invoice-amount td.total{text-align: right;font-weight: bold}
+
+#invoice-amount tbody, #invoice-amount #terbilang_tr{border-top:1px solid #000; border-bottom: solid 1px #000;}
+
+/*=========================== GENERAL =========================*/
+
+.left{float:left;}
+.right{float:right;}
+.clearfloat{clear:both;}
+.bold{font-weight:bold;}
+.red{color:#F00;}
+

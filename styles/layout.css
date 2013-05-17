@@ -1,0 +1,454 @@
+/*
+Template Name: Internet Business
+File: Layout CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+/*@import url(navi.css);
+@import url(forms.css);
+@import url(tables.css);
+@import url(featured_slide.css);*/
+
+@import url(home.css);
+@import url(content.css);
+
+/* ==================================== Reset ================================== */
+
+html, body, div, span, applet, object, iframe,  
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+    a, abbr, acronym, address, big, cite, code,  
+    del, dfn, em, font, img, ins, kbd, q, s, samp,  
+    small, strike, strong, sub, sup, tt, var,  
+    b, u, i, center,  
+    dl, dt, dd, ol, ul, li,  
+    fieldset, form, label, legend,  
+    table, caption, tbody, tfoot, thead, tr, th, td {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    outline: 0;  
+    font-size: 100%;  
+    vertical-align: baselinebaseline;  
+    background: transparent;  
+    }  
+    body {  
+    line-height:1.25;  
+    }  
+    ol, ul {  
+    list-style: none;  
+    }  
+    blockquote, q {  
+    quotes: none;  
+    }  
+    blockquote:before, blockquote:after,  
+    q:before, q:after {  
+    content: '';  
+    content: none;  
+    }  
+      
+    /* remember to define focus styles! */  
+    :focus {  
+    outline: 0;  
+    }  
+      
+    /* remember to highlight inserts somehow! */  
+    ins {  
+    text-decoration: none;  
+    }  
+    del {  
+    text-decoration: line-through;  
+    }  
+    
+
+/* ==================================== General ================================== */
+
+	body{
+		margin:0;
+		padding:0;
+		font-size:1em;
+		font-family: "Tahoma", Helvetica,Arial,sans-serif;
+		background:#2cb6fe;
+	}
+	
+	a{
+		text-decoration:none;	
+	}
+	
+	/* Elm Config */
+	.no-margin{margin:0; padding:0;}
+	.wrapper{margin:0 auto; width:1020px; clear:both;}
+	.hide{display:none;}
+	
+	/* Float Elm */
+	.clear{clear:both}
+	.left{float:left}
+	.right{float:right}
+	
+	/* Text decoration */
+	.tx-white{color:#FFF;}
+	.tx-black{color:#333;}
+	.tx-red{color:#F00;}
+	.tx-yellow{color:#FF0;}
+	
+	.tx-medium{font-size:2em;}
+	.tx-big{font-size:4em;}
+	
+	.tx-sh-dark{text-shadow:0 -1px 1px rgba(0,0,0,.8);}
+	.tx-sh-bright{text-shadow:0 1px 1px rgba(255,255,255,.8);}
+	.tx-bold{font-weight:bold;}
+	.tx-italic{font-style:italic;}
+	
+	/* Form input */
+	input{border:none;}
+	input[type="text"], input[type="password"]{
+		border-radius:5px;
+		padding:5px 10px;
+	}
+	
+	input[type="submit"], input[type="button"], .btn{
+		border-radius:5px;
+		padding:5px 10px;
+		cursor:pointer;
+		color:#333;
+		box-shadow:0 0 2px rgba(0,0,0,.8);
+		/*border:solid 1px #CCC;*/
+		font-weight:bold;
+		
+		background: #ffff00; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffff00 0%, #ffc73a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffc73a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #ffff00 0%,#ffc73a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffc73a',GradientType=0 ); /* IE6-9 */
+	}
+	
+	input[type="submit"]:hover, input[type="button"]:hover, .btn:hover{
+		text-shadow:0 -1px 1px rgba(255,255,255,.5);
+		color:#FFF;
+		
+		background: #05abe0; /* Old browsers */
+		background: -moz-linear-gradient(top, #05abe0 0%, #00e9ff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#05abe0), color-stop(100%,#00e9ff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #05abe0 0%,#00e9ff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#00e9ff',GradientType=0 ); /* IE6-9 */
+	}
+	
+	/* Utils */
+	a.btn-edit{
+		padding:5px 10px;
+		color:#333;	
+		font-size:.8em;
+		font-weight:bold;
+		border-radius:5px;
+		box-shadow:0 0 1px rgba(0,0,0,.8);
+		
+		background: #ffff00; /* Old browsers */
+		background: -moz-linear-gradient(top, #ffff00 0%, #ffc73a 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffc73a)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #ffff00 0%,#ffc73a 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffc73a',GradientType=0 ); /* IE6-9 */
+	}
+	
+	a.btn-edit:hover{
+		color:#FFF;
+		background: #05abe0; /* Old browsers */
+		background: -moz-linear-gradient(top, #05abe0 0%, #00e9ff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#05abe0), color-stop(100%,#00e9ff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #05abe0 0%,#00e9ff 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #05abe0 0%,#00e9ff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#00e9ff',GradientType=0 ); /* IE6-9 */
+	}
+	
+/* ==================================== Header ================================== */
+	#header{
+		background-image:url(../images/shadow-1.png);
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		background-position:bottom center
+		border-radius:0 0 20px 20px;
+		height:75px;	
+	}
+	
+	#bar{
+		background:#FFF;
+		width:100%; height:60px;	
+		border-radius:0 0 10px 10px;
+	}
+	
+	/* Branding Logo */
+	#branding{
+		width:140px;	
+	}
+	
+	#branding img{
+		margin:10px;
+		width:100%;	
+	}
+	
+	.top-menu{
+		margin:12px 10px 0 0;
+		text-align:center;	
+	}
+	
+	.top-menu a{
+		color:#FFF;
+		font-size:10px;	
+		font-weight:bold;
+		text-decoration:none;
+		padding:5px;
+		width:24px; height:24px;
+		background-color:#F00;
+		border-radius:24px;
+		display:block;
+		text-indent:-9999px;
+		background-position: center center;
+		
+		box-shadow:0 1px 1px rgba(0,0,0,0.5);
+		-moz-box-shadow:0 1px 1px rgba(0,0,0,0.5);
+		-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.5);
+		-o-box-shadow:0 1px 1px rgba(0,0,0,0.5);
+		-ms-box-shadow:0 1px 1px rgba(0,0,0,0.5);
+	}
+	
+	.top-menu a:hover{
+		background-color:#130C47;	
+	}
+	
+	#home a{
+		background-image:url(../images/icons/home.png);
+		background-repeat: no-repeat;	
+			
+	}
+	
+	#selfcare a{
+		background-image:url(../images/icons/selfcare.png);
+		background-repeat: no-repeat;	
+			
+	}
+	
+	#logout a{
+		background-image:url(../images/icons/logout.png);
+		background-repeat: no-repeat;
+	}
+	
+	
+
+/* ==================================== Footer ================================== */
+	#footer{
+		font-size:12px;
+		padding:20px 0;
+		color:#333;
+		text-align:center;
+		background:url(../images/bg-footer.png) no-repeat center top;
+	}
+	
+	
+/* ==================================== content ================================== */
+	#content{margin:20px 0 40px 0;}
+	
+	.page{color:#FFF; margin:80px auto 40px auto; /*background:rgba(255,255,255,0.85)*/;}
+	.page h1, .page h2, .page ul, .page p{margin:20px;}
+
+
+/* ==================================== Login ================================== */
+	#login{
+		position:relative;
+	}
+	
+	#login-form{
+		position:absolute;
+		border-left:1px solid #069;
+		width:300px;
+		font-size:12px;
+		right:20px; top:360px;
+	}
+	
+	#login-form input[type="text"], #login-form input[type="password"]{
+		width:100%;
+		margin:3px 0 10px 0;
+		font-size:18px;
+	}
+	
+	#login-form p{
+		font-size:11px;
+	}
+	
+	#login-form input[type="submit"]{
+		color:#FFF;
+		background:#F00;
+		padding:3px;
+		text-size:12px;
+		border-radius:5px;
+	}
+	
+	#login-info{
+		position:relative;
+		/*margin-top:-40px;*/
+	}
+	
+	#login-info ul{
+		list-style:none;
+		/*margin-top:-20px;*/	
+	}
+	
+/* ==================================== User Menu ================================== */
+	
+	#user-menu.cibubur{
+		width:550px;
+	}
+	
+	#user-menu.bsd{
+		width:370px;
+	}
+	
+	#user-menu{
+		/*background:#999;*/
+		margin:0 auto;
+		list-style:none;	
+	}
+	
+	#user-menu li{
+		display:inline-block;
+		margin:0 10px;
+		width:160px; height:120px;
+		text-align:center;
+	}
+	
+	#user-menu li a{
+		display:block;
+		margin:0 auto;
+		background:#000;
+		padding-top:120px;
+		color:#FF0;
+		font-size:18px;
+		font-weight:bold;
+		text-decoration:none;
+		font-weight:bold;
+	}
+	
+	#user-menu li#user a{
+		background:url(../images/icons/user.png) no-repeat center -5px ;
+	}
+	
+	#user-menu li#package a{
+		background:url(../images/icons/package.png) no-repeat center -5px ;
+	}
+	
+	#user-menu li#billing a{
+		background:url(../images/icons/billing.png) no-repeat center -5px ;
+	}
+	
+	
+	
+	#user-menu li.active a, #user-menu li:hover a{
+		color:#FFF;
+	}
+	
+	#user-menu li#user.active a, #user-menu li#user:hover a{
+		background:url(../images/icons/user-active.png) no-repeat center -5px ;
+	}
+	
+	#user-menu li#package.active a, #user-menu li#package:hover a{
+		background:url(../images/icons/package-active.png) no-repeat center -5px ;
+	}
+	
+	#user-menu li#billing.active a, #user-menu li#billing:hover a{
+		background:url(../images/icons/billing-active.png) no-repeat center -5px ;
+	}
+	
+/* ==================================== Edit Profile Form ================================== */
+
+#pass-form{
+	margin:0 20px;	
+}
+
+.form-set{
+	border:none;	
+	border-top:1px dotted #999;
+	margin-top:20px;
+}
+
+.form-set legend{
+	margin-left:-10px; 
+	padding-right:10px;
+	font-size:16px;
+	font-weight:bold;
+	color:#999;
+	font-family:"Arial", Helvetica, sans-serif
+	/*text-shadow:0 -1px 1px rgba(0,0,0,.5);*/
+}
+
+.profile-data input[type="text"], .profile-data input[type="password"]{
+	border:1px solid #999;	
+}
+
+.profile-data input[type="text"]:focus, .profile-data input[type="password"]:focus{
+	border:2px solid #2CB6FE;
+	box-shadow:0 0 2px #2CB6FE;	
+}
+
+.profile-data{
+	font-size:0.8em;
+	font-weight:bold;
+	margin:10px 0;	
+	width:100%;
+}
+
+.profile-data td.label-field{
+	width:15%;	
+	background:#EFEFEF;
+	border-radius:5px;
+	padding-left:10px;
+}
+
+.profile-data td.content-field{
+	width:70%;	
+}
+
+
+/* ==================================== Email Billing ================================== */
+
+#billing-email #email-form{
+	margin:0 auto;
+	width:90%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#billing-email #email-form .inv-info{
+	margin-right:10px;	
+}
+
+#billing-email #email-form label{
+	display:block;
+	margin-bottom:5px;
+	font-size:12px;
+}
+
+#billing-email #email-form input, #billing-email #email-form textarea{
+	box-shadow:inset 1px 1px 1px #CCC;
+	border:1px solid #CCC; 
+}
+
+#billing-email #email-form .inv-info input{ 
+	background:#EEE;
+}
+
+#billing-email #email-form textarea{
+	width:98%;
+	resize:none;
+	border:1px solid #999; 
+	border-radius:5px;
+	padding:1%;
+}

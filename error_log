@@ -1,0 +1,21 @@
+[13-Mar-2013 04:00:40] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/application/controllers/login_control.php on line 156
+[15-Mar-2013 03:58:41] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/selfcare/public_html/application/models/package_model.php on line 230
+[15-Mar-2013 03:59:32] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/selfcare/public_html/application/models/package_model.php on line 230
+[15-Mar-2013 04:20:50] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in /home/selfcare/public_html/application/models/package_model.php on line 230
+[25-Mar-2013 02:17:33] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 441
+[25-Mar-2013 02:19:46] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 428
+[25-Mar-2013 02:35:49] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 431
+[25-Mar-2013 02:44:12] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 431
+[25-Mar-2013 02:47:59] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 450
+[25-Mar-2013 02:48:41] PHP Fatal error:  Function name must be a string in /home/selfcare/public_html/application/controllers/billing_control.php on line 450
+[25-Mar-2013 10:08:41] PHP Parse error:  syntax error, unexpected ';' in /home/selfcare/public_html/application/controllers/billing_control.php on line 453
+[25-Mar-2013 10:08:59] PHP Parse error:  syntax error, unexpected ';' in /home/selfcare/public_html/application/controllers/billing_control.php on line 453
+[25-Mar-2013 10:09:01] PHP Parse error:  syntax error, unexpected ';' in /home/selfcare/public_html/application/controllers/billing_control.php on line 453
+[26-Mar-2013 07:39:30] PHP Parse error:  syntax error, unexpected T_ECHO in /home/selfcare/public_html/application/views/billing_email.php on line 7
+[02-Apr-2013 04:36:32] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 19 bytes) in /home/selfcare/public_html/system/database/drivers/mysql/mysql_result.php on line 167
+[02-Apr-2013 05:29:34] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 90 bytes) in /home/selfcare/public_html/system/database/drivers/mysql/mysql_result.php on line 167
+[02-Apr-2013 05:45:43] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11 bytes) in /home/selfcare/public_html/system/database/drivers/mysql/mysql_result.php on line 167
+[02-Apr-2013 06:45:53] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 84 bytes) in /home/selfcare/public_html/system/database/drivers/mysql/mysql_result.php on line 167
+[03-Apr-2013 09:33:59] PHP Parse error:  syntax error, unexpected $end in /home/selfcare/public_html/application/controllers/billing_control.php on line 325
+[03-Apr-2013 09:34:04] PHP Parse error:  syntax error, unexpected $end in /home/selfcare/public_html/application/controllers/billing_control.php on line 325
+[01-May-2013 05:35:43] PHP Parse error:  syntax error, unexpected '}' in /home/selfcare/public_html/application/views/header.php on line 85

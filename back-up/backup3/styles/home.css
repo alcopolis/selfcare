@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+#welcome{
+	background-image: url(../images/home.png);
+	background-position:center left;
+	background-repeat:no-repeat;
+	min-height:600px;	
+}
+
+#intro{
+	width:400px;
+	float:right;
+	margin-top:80px;	
+}
+
+#intro #user-menu{
+	width:auto !important;
+	padding:10px 0 10px 0;
+	margin:0 auto;
+	/*border-bottom:2px solid #FF0;*/
+}
+
+#intro #user-menu li{
+	display:inline-block;
+	margin:0;
+	width:130px; height:100px;
+	text-align:center;
+}
+
+#intro #user-menu li a{
+	display:block;
+	margin:0 auto;
+	padding-top:100px;
+	color:#FF0;
+	font-size:11px;
+	text-decoration:none;
+	font-weight:bold;
+	background-size:contain !important;
+	background-position:center top !important;
+}
+
+#intro #user-menu li:hover a{
+	color:#FFF;	
+}
+
+#intro #nav{
+	margin:0;
+	margin-top:40px;	
+}
+
+#intro #nav p{
+	font-size:12px;	
+	/*text-decoration:underline;*/
+	margin:0;
+	background:#FF0;
+	padding:5px 15px 5px 10px;
+	color:#333;
+	border-radius:10px 10px 0 0;
+}
+
+#login-info ul li{
+	margin:5px 0;	
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content-section{
+	margin:40px 0;
+	background-image: url("../images/shadow-2.png");
+    background-repeat: no-repeat;
+	background-position:left 30px;
+	width:100%;
+}
+
+.content-section header{
+	color:#FFF;
+	/*background:#007DBE;*/
+	background:#333;
+	max-width:240px;
+	font-size:1.5em;
+	font-weight:bold;
+	margin:0 0 0 20px;
+	padding:5px 10px 5px 35px;
+	border-radius:10px 10px 0 0;
+	background-image:url(../images/icons/arr-down.jpg);
+	background-repeat:no-repeat;
+	background-position:10px center;
+	text-shadow:0 -1px 1px rgba(0,0,0,.8);
+}
+
+.content-body{
+	background:#FFF;
+	border-radius:10px;	
+	color:#007DBE;
+	margin:0 0 0 0;
+	padding:20px;
+}
+
+
+
+.content-body #util{
+	text-align:right;	
+}
+
+
+/*---------------------------------- Table General ---------------------------------*/
+#tbl-view{
+	width:100%;
+	border:none;
+	font-size:.8em;
+	font-weight:bold;
+	margin:20px 0;
+}
+
+#tbl-view td{
+	margin:0;
+	border-bottom:1px dotted #2cb6fe;
+}
+
+
+
+/*---------------------------------- Table Static ----------------------------------*/
+
+#tbl-view.static td{
+	text-align:left;
+	padding:10px 0 0 10px;
+}
+
+#tbl-view.static td.label-field{
+	width:20%;	
+}
+
+#tbl-view.static td.content-field{
+	width:70%;	
+}
+
+
+/*---------------------------------- Table Dynamic ----------------------------------*/
+
+#tbl-view.dynamic th{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#0A3D70;
+	background:#EFEFEF;	
+}
+
+#tbl-view.dynamic th, #tbl-view.dynamic td{
+	text-align:center;
+	padding:10px 0;
+}
+
+
+/*---------------------------------- IFrame ----------------------------------*/
+
+#frame-content{
+	width:100%;	
+}

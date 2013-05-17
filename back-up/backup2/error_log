@@ -1,0 +1,106 @@
+[13-Dec-2012 09:03:08] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'dompdf/dompdf_config.inc.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/selfcare/public_html/system/helpers/dompdf_helper.php on line 4
+[13-Dec-2012 16:01:46] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[13-Dec-2012 16:03:37] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[13-Dec-2012 16:04:01] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[13-Dec-2012 16:04:01] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[14-Dec-2012 09:49:02] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[14-Dec-2012 10:51:59] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[14-Dec-2012 10:56:52] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:170
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(322): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 170
+[17-Dec-2012 13:41:13] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[17-Dec-2012 13:41:50] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[17-Dec-2012 13:48:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[17-Dec-2012 13:55:49] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 15:09:38] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 15:18:45] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 15:21:16] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 15:47:09] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 15:53:42] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[18-Dec-2012 16:09:40] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on '192.168.10.206' (4) in /home/selfcare/public_html/connect.php on line 2
+[21-Dec-2012 10:47:26] PHP Fatal error:  Uncaught exception 'Exception' with message 'Number is out of range' in /home/selfcare/public_html/application/controllers/billing.php:180
+Stack trace:
+#0 /home/selfcare/public_html/application/controllers/billing.php(332): Billing->number_to_words(1.84467440737E+19)
+#1 [internal function]: Billing->pdf_billing('1306563')
+#2 /home/selfcare/public_html/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#3 /home/selfcare/public_html/index.php(202): require_once('/home/selfcare/...')
+#4 {main}
+  thrown in /home/selfcare/public_html/application/controllers/billing.php on line 180
+[04-Feb-2013 16:52:40] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 66
+[04-Feb-2013 16:55:58] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 66
+[05-Feb-2013 08:12:01] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 66
+[05-Feb-2013 08:26:58] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 66
+[05-Feb-2013 08:43:24] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 66
+[13-Feb-2013 15:42:04] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[13-Feb-2013 16:00:55] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[13-Feb-2013 21:54:34] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:02:04] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:13:50] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:16:32] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:18:52] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:21:43] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 10:44:46] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 11:07:34] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 11:23:35] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 11:35:07] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 11:54:00] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 12:05:23] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[14-Feb-2013 17:22:40] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[15-Feb-2013 08:48:18] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[15-Feb-2013 11:32:14] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[17-Feb-2013 07:39:51] PHP Fatal error:  Call to a member function num_rows() on a non-object in /home/selfcare/public_html/application/models/login_model.php on line 24
+[08-Mar-2013 10:18:41] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[08-Mar-2013 10:21:15] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[08-Mar-2013 10:37:14] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[08-Mar-2013 10:37:40] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[08-Mar-2013 10:38:04] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[08-Mar-2013 10:38:26] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[11-Mar-2013 13:18:20] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
+[11-Mar-2013 14:38:45] PHP Fatal error:  Call to a member function row() on a non-object in /home/selfcare/public_html/back-up/backup2/application/controllers/billing.php on line 232
