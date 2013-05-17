@@ -42,6 +42,7 @@ $route['default_controller'] = "login_control/index";
 $route['index'] = "login_control/index";
 $route['login'] = "login_control/login";
 $route['logout'] = "login_control/logout";
+$route['admin'] = "admin/login";
 
 $route['404_override'] = '';
 
