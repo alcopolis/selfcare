@@ -6,6 +6,6 @@ class MY_Controller extends CI_Controller {
 	function __construct() {
 		parent::__construct();
 		
-		$this->data['base_dir'] = config_item('base_dir');
+		$this->data['site_config'] = config_item('site_config');
 	}
 }
