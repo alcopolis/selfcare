@@ -241,7 +241,7 @@ class Package_control extends CI_Controller {
 						foreach($chusers as $chuser){//get selected category					
 							if($chuser->serviceid == $baris->serviceid){
 								if($trpackageid==$chuser->pktid){
-									$chdef .= "<li id='". $baris->serviceid ."' class='premium selected'>";		
+									$chdef .= "<li id='". $baris->serviceid ."' class='premium selected-active'>";		
 									$chdef .= $baris->servicename;
 									$chdef .= "</li>";
 									$sel=1;

@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = 'password';
+$db['default']['hostname'] = 'billing.cepat.net.id';
+$db['default']['username'] = 'moraapps';
+$db['default']['password'] = 'moraapps';
 $db['default']['database'] = 'self_care';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
@@ -71,9 +71,15 @@ $db['default']['stricton'] = FALSE;
 $active_group = 'altdb';
 $active_record = TRUE;
 
-$db['altdb']['hostname'] = 'localhost';
-$db['altdb']['username'] = 'root';
-$db['altdb']['password'] = 'password';
+//$db['altdb']['hostname'] = 'billing.cepat.net.id';
+//$db['altdb']['username'] = 'moraapps';
+//$db['altdb']['password'] = 'moraapps';
+
+//$db['altdb']['hostname'] = '202.43.178.228';
+//$db['altdb']['hostname'] ='27.50.26.139';
+$db['altdb']['hostname'] = 'billing.cepat.net.id';
+$db['altdb']['username'] = 'moraapps';
+$db['altdb']['password'] = 'moraapps';
 $db['altdb']['database'] = 'self_care';
 $db['altdb']['dbdriver'] = 'mysql';
 $db['altdb']['dbprefix'] = '';

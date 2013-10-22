@@ -1,24 +1,23 @@
         <div class="page">		
            <div id="welcome">
-				<h1 class="tx-medium tx-yellow tx-sh-dark" style="margin:0; text-align:right;"><span class="tx-medium">Selamat Datang</span><br /> di layanan Webselfcare Anda</h1>
+				<h1 class="tx-medium tx-blue" style="margin:0; text-align:right; position:relative; top:120px; right:40px"><span class="tx-medium">Selamat Datang</span><br /> di layanan Webselfcare Anda</h1>
 				
                 <div id="intro">
-                    <div id="login-info" class="tx-white tx-bold" style="background:rgba(0,0,0,0.9); padding:10px 0; border-radius:10px;">
-                        <h3 style="margin:0 0 20px 20px;">Layanan ini memberikan Anda<span class="tx-yellow"> kemudahan </span>untuk:</h3>
+                    <div id="login-info" class="tx-black tx-bold" style="padding:10px 0; position:relative; top:140px; right:10px">
+                        <h3 style="margin:0 0 20px 20px;">Layanan ini memberikan Anda<span class="tx-blue"> kemudahan </span>untuk:</h3>
                         <ul style="font-size:0.8em;">
                             <ul>
                             <?php if ($this->client_cluster=="CIBUBUR"){ ?>
-                            <li><span class="tx-yellow">Modifikasi</span> saluran TV kabel Anda</li>
+                            <li><span class="tx-blue">Modifikasi</span> saluran TV kabel Anda</li>
                             <?php } ?>
-                                <li>Dapatkan informasi mengenai <span class="tx-yellow">tagihan</span> Anda</li>
+                                <li>Dapatkan informasi mengenai <span class="tx-blue">tagihan</span> Anda</li>
                                 <!--<li><span class="tx-yellow">Bayar</span> tagihan Anda secara online</li>-->
-                                <li>Perbaharui<span class="tx-yellow"> profil</span>  Anda secara online</li>
+                                <li>Perbaharui<span class="tx-blue"> profil</span>  Anda secara online</li>
                             </ul>
                         </ul>
                     </div>
                     
-                    <div id="nav">
-                        <p class="tx-yellow tx-bold">Mulai &raquo;</p>
+                    <div id="nav" style="text-align:right; position:relative; top:120px; right:40px">
 						<?php if ($this->client_cluster=="CIBUBUR"){ ?>
                         <ul id="user-menu" class="home-welcome" >
 						<?php }else{ ?>

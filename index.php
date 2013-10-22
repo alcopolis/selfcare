@@ -1,7 +1,5 @@
 <?php
 
-date_default_timezone_set('Asia/Jakarta');
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -20,14 +18,7 @@ date_default_timezone_set('Asia/Jakarta');
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	switch(dirname(__FILE__)){
-		case 'C:\xampp\htdocs\selfcare' :
-			define('ENVIRONMENT', 'development');
-			break;
-		default :
-			define('ENVIRONMENT', 'production');
-			break;
-	}
+	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING

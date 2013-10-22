@@ -92,6 +92,7 @@ class Login_model extends CI_Model {
 				$this->tulis->set('PHONE' , $userdata->PHONE);
 				$this->tulis->set('MOBILE',$userdata->MOBILE);
 				$this->tulis->set('SALTKEY', $this->_create_salt());
+				$this->tulis->set('REGDATE',date('Y-m-d'));
 				$this->tulis->insert('LOGIN_CUST');
 				return TRUE;
 				$this->tulis->close();

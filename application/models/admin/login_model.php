@@ -2,60 +2,57 @@
  
 class Login_model extends CI_Model {
 	
-	function __construct()
-	{
-		parent::__construct();
-		$this->tulis = $this->load->database('default',TRUE);// koneksi ke database billing untuk update/insert
-		//$this->baca = $this->load->database('altdb', TRUE);// koneksi ke database read/replikasi
-		$this->baca = $this->load->database('default', TRUE);// koneksi ke database read/replikasi
+	protected $_table_name = 'login_admin';
+	protected $_order_by = 'id';
+	
+	public $rules = array(
+		'email' => array(
+			'field' => 'email',
+			'label' => 'Email',
+			'rules' => 'trim|required|valid_email|xss_clean'
+		),
+		'password' => array(
+			'field' => 'password',
+			'label' => 'Password',
+			'rules' => 'trim|required'
+		)	
+	);
+	
+	function __construct(){
+		parent::__construct();	
 	}
 	
-	// fungsi login untuk memasukan usercode ke dalam session logged
-	public function login($user_email, $a)
-	{
-		$CI =& get_instance();
-		$usr = $this->get_user_data($user_email)->row();
-	
-		$CI->session->set_userdata('logged', $user_email);
-		$CI->session->set_userdata('aktif', $a);
-	}
-	
-	//function get cluster untuk mendapatkan cluster pelanggan
-	public function get_user_data($user_email)
-	{
-		$this->baca->initialize();
-	
-		$this->baca->select('*');
-		$this->baca->where('EMAIL',$user_email);
-		$this->baca->from('login_admin');
-		return $this->baca->get();
-	
-		$this->baca->close();
-	}
-	// end of get cluster
-	
-	// fungsi logout untuk menghapus usercode di session
-	public function logout()
-	{
-		$CI =& get_instance();
-		$CI->session->sess_destroy();
-		$CI->session->unset_userdata(array('logged'=>'','aktif'=>''));
-	}
-	
-	// fungsi untuk melakukan validasi login
-	public function validate($email,$password)
-	{
-		$this->baca->initialize();
-		$qry = $this->baca->get_where('LOGIN_ADMIN', array('email' => $email));
-		$cek = $qry->num_rows();
+	public function login(){		
+		$user = $this->get_by(array(
+			'email' => $this->input->post('email'),
+			'password' => $this->hash($this->input->post('password'))
+		), TRUE);
 		
-		if($cek <= 0){			
-			return FALSE;
+		if(count($user)){
+			$usrdata = array(
+				'name' => $user->name,
+				'email' => $user->email,
+				'id' => $user->id,
+				'loggedin' => TRUE
+			);
+			$this->session->set_userdata($usrdata);
+			return TRUE;
 		}else{
-			$this->login($username,'1');
+			return FALSE;	
 		}
 		
-		$this->baca->close();
+		//return $user;
 	}
-	// end of validate function
+	
+	public function logout(){
+		$this->session->sess_destroy();
+	}
+	
+	public function loggedin(){
+		return (bool) $this->session->userdata('loggedin');
+	}
+	
+	public function hash($rand_string){
+		return hash('sha512', $rand_string . config_item('encryption_key'));
+	}
 }

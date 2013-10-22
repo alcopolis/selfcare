@@ -68,8 +68,8 @@ html, body, div, span, applet, object, iframe,
 		margin:0;
 		padding:0;
 		font-size:1em;
-		font-family: "Tahoma", Helvetica,Arial,sans-serif;
-		background:#2cb6fe;
+		font-family: "Titillium Web",Helvetica Neue,Helvetica,Tahoma,sans-serif;
+		background:#FFF;
 	}
 	
 	a{
@@ -91,6 +91,7 @@ html, body, div, span, applet, object, iframe,
 	.tx-black{color:#333;}
 	.tx-red{color:#F00;}
 	.tx-yellow{color:#FF0;}
+	.tx-blue{color:#2A72C7}
 	
 	.tx-medium{font-size:2em;}
 	.tx-big{font-size:4em;}
@@ -109,25 +110,17 @@ html, body, div, span, applet, object, iframe,
 	
 	input[type="submit"], input[type="button"], .btn{
 		border-radius:5px;
-		padding:5px 10px;
+		padding:2px 15px;
 		cursor:pointer;
-		color:#333;
-		box-shadow:0 0 2px rgba(0,0,0,.8);
-		/*border:solid 1px #CCC;*/
-		font-weight:bold;
-		
-		background: #ffff00; /* Old browsers */
-		background: -moz-linear-gradient(top, #ffff00 0%, #ffc73a 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffc73a)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* IE10+ */
-		background: linear-gradient(to bottom, #ffff00 0%,#ffc73a 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffc73a',GradientType=0 ); /* IE6-9 */
+		color:#FFF;	
+		font-size:.9em;
+		font-weight:normal;
+		box-shadow:0 0 1px rgba(0,0,0,.8);
+		background: #2A72C7; /* Old browsers */
 	}
 	
 	input[type="submit"]:hover, input[type="button"]:hover, .btn:hover{
-		text-shadow:0 -1px 1px rgba(255,255,255,.5);
+		/*text-shadow:0 -1px 1px rgba(255,255,255,.5);*/
 		color:#FFF;
 		
 		background: #05abe0; /* Old browsers */
@@ -143,20 +136,13 @@ html, body, div, span, applet, object, iframe,
 	/* Utils */
 	a.btn-edit{
 		padding:5px 10px;
-		color:#333;	
-		font-size:.8em;
-		font-weight:bold;
+		color:#FFF;	
+		font-size:1em;
+		font-weight:normal;
 		border-radius:5px;
 		box-shadow:0 0 1px rgba(0,0,0,.8);
 		
-		background: #ffff00; /* Old browsers */
-		background: -moz-linear-gradient(top, #ffff00 0%, #ffc73a 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff00), color-stop(100%,#ffc73a)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #ffff00 0%,#ffc73a 100%); /* IE10+ */
-		background: linear-gradient(to bottom, #ffff00 0%,#ffc73a 100%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff00', endColorstr='#ffc73a',GradientType=0 ); /* IE6-9 */
+		background: #2A72C7; /* Old browsers */
 	}
 	
 	a.btn-edit:hover{
@@ -173,18 +159,11 @@ html, body, div, span, applet, object, iframe,
 	
 /* ==================================== Header ================================== */
 	#header{
-		background-image:url(../images/shadow-1.png);
-		background-repeat:no-repeat;
-		background-size:100% 100%;
-		background-position:bottom center
-		border-radius:0 0 20px 20px;
-		height:75px;	
+		margin:0;
 	}
 	
 	#bar{
-		background:#FFF;
-		width:100%; height:60px;	
-		border-radius:0 0 10px 10px;
+
 	}
 	
 	/* Branding Logo */
@@ -209,8 +188,8 @@ html, body, div, span, applet, object, iframe,
 		text-decoration:none;
 		padding:5px;
 		width:24px; height:24px;
-		background-color:#F00;
-		border-radius:24px;
+		background-color:#2A72C7;
+		border-radius:3px;
 		display:block;
 		text-indent:-9999px;
 		background-position: center center;
@@ -228,8 +207,7 @@ html, body, div, span, applet, object, iframe,
 	
 	#home a{
 		background-image:url(../images/icons/home.png);
-		background-repeat: no-repeat;	
-			
+		background-repeat: no-repeat;
 	}
 	
 	#selfcare a{
@@ -247,11 +225,13 @@ html, body, div, span, applet, object, iframe,
 
 /* ==================================== Footer ================================== */
 	#footer{
-		font-size:12px;
-		padding:20px 0;
+		font-size:14px;
+		padding:10px 0;
+		/*border-radius:5px;*/
+		border-top:1px solid #CCC;
 		color:#333;
 		text-align:center;
-		background:url(../images/bg-footer.png) no-repeat center top;
+		/*background:#2A72C7;*/
 	}
 	
 	
@@ -269,26 +249,28 @@ html, body, div, span, applet, object, iframe,
 	
 	#login-form{
 		position:absolute;
-		border-left:1px solid #069;
+		/*border-left:1px solid #CCC;*/
 		width:300px;
 		font-size:12px;
-		right:20px; top:360px;
+		right:80px; top:300px;
 	}
 	
 	#login-form input[type="text"], #login-form input[type="password"]{
 		width:100%;
 		margin:3px 0 10px 0;
 		font-size:18px;
+		border:1px solid #999;
 	}
 	
 	#login-form p{
 		font-size:11px;
+		color:#4d4e53;
 	}
 	
 	#login-form input[type="submit"]{
 		color:#FFF;
-		background:#F00;
-		padding:3px;
+		background:#39C;
+		padding:5px 10px;
 		text-size:12px;
 		border-radius:5px;
 	}
@@ -331,7 +313,7 @@ html, body, div, span, applet, object, iframe,
 		margin:0 auto;
 		background:#000;
 		padding-top:120px;
-		color:#FF0;
+		color:#2A72C7;
 		font-size:18px;
 		font-weight:bold;
 		text-decoration:none;
@@ -353,7 +335,7 @@ html, body, div, span, applet, object, iframe,
 	
 	
 	#user-menu li.active a, #user-menu li:hover a{
-		color:#FFF;
+		color:#333;
 	}
 	
 	#user-menu li#user.active a, #user-menu li#user:hover a{

@@ -2,7 +2,7 @@
 /* CSS Document */
 
 #welcome{
-	background-image: url(../images/home.png);
+	background-image: url(../images/home.jpg);
 	background-position:center left;
 	background-repeat:no-repeat;
 	min-height:600px;	
@@ -11,7 +11,7 @@
 #intro{
 	width:400px;
 	float:right;
-	margin-top:80px;	
+	margin-top:20px;	
 }
 
 #intro #user-menu{
@@ -30,8 +30,8 @@
 
 #intro #user-menu li{
 	display:inline-block;
-	margin:0;
-	width:130px; height:100px;
+	margin:0 10px;
+	width:100px; height:100px;
 	text-align:center;
 }
 
@@ -39,8 +39,8 @@
 	display:block;
 	margin:0 auto;
 	padding-top:100px;
-	color:#FF0;
-	font-size:11px;
+	color:#2a72cc;
+	font-size:14px;
 	text-decoration:none;
 	font-weight:bold;
 	background-size:contain !important;
@@ -48,22 +48,21 @@
 }
 
 #intro #user-menu li:hover a{
-	color:#FFF;	
+	color:#333;	
 }
 
 #intro #nav{
 	margin:0;
-	margin-top:40px;	
 }
 
 #intro #nav p{
 	font-size:12px;	
 	/*text-decoration:underline;*/
 	margin:0;
-	background:#FF0;
+	background:#2A72C7;
 	padding:5px 15px 5px 10px;
-	color:#333;
-	border-radius:10px 10px 0 0;
+	color:#FFF;
+	border-radius:3px;
 }
 
 #login-info ul li{

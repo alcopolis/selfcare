@@ -3,6 +3,8 @@
 <head>
     <title>Web Selfcare</title>
     <link rel="stylesheet" href="<?=base_url()?>styles/layout.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>   
+    
     <script type="text/javascript" src="<?=base_url()?>scripts/jquery-1.8.1.min.js"></script>
     <script type="text/javascript" src="<?=base_url()?>scripts/main.js"></script>
     <script type="text/javascript" src="<?=base_url()?>jwplayer/jwplayer.js" ></script>
@@ -27,13 +29,13 @@
     <div id="header">
         <div id="bar">
 			<div id="branding" class="left">
-                <a href="<?=base_url();?>login_control" title="Home"><img src="<?=base_url()?>images/cepat-net-logo.png"/></a>
+                <a href="<?=base_url();?>login_control" title="Home"><img src="<?=base_url()?>images/logo.png"/></a>
             </div>
             <?php //print_r($this->session->userdata('logged')); ?>
             <?php $this->client_access = $this->session->userdata('aktif');?>
             <?php if($this->client_access=='1'){?>
             	<div id="logout" class="top-menu right"><a href="<?=base_url();?>logout" title="Log out">Log Out</a></div>
-            	<?php if($this->session->userdata('logged') == 'sTbGr9'){ ?>
+            	<?php if($this->session->userdata('logged') == 'stbgr9'){ ?>
             		<div id="watch" class="top-menu right"><a href="<?=base_url();?>watch_control" title="Watch Online TV">Watch TV</a></div>
             	<?php };?>
             	<div id="selfcare" class="top-menu right"><a href="<?=base_url();?>login_control" title="Home Selfcare">Selfcare</a></div>
@@ -44,36 +46,6 @@
 			<?php } ?>
             <div class="clear"></div>
 		</div>
-		
-		<?php /*?><div id="customer-nav">
-            <div id="branding">
-                <a href="<?=base_url();?>welcome" title="Home"><img src="<?=base_url()?>images/cepat-net-logo.png"/></a>
-            </div>
-            <?php 
-                if($this->client_logon){
-            ?>
-            
-            <div id="customer-profile">
-                <div id="cust-name"><?php echo $default['customername'] ?> &or;</div>
-                <div class="subnav">
-                    <p><a href="<?=base_url();?>customer/change_pwd">Change Password</a></p>
-                    <p><a href="<?=base_url();?>logout" class="logout">Log Out</a></p>
-                </div>
-                <div class="clear"></div>
-            </div>
-            
-            <ul id="customer-menu">
-                <li><a href="<?=base_url();?>welcome">Home</a></li>
-                <li><a href="<?=base_url();?>customer">Profile</a></li>
-                <li><a href="<?=base_url();?>package">Package</a></li>
-                <li><a href="<?=base_url();?>billing">Billing Info</a></li>
-            </ul>
-            
-            <?php 
-                }
-            ?>
-            <div class="clear"></div>
-        </div><?php */?>
     </div>
       
     <div id="content">

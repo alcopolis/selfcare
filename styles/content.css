@@ -2,35 +2,37 @@
 /* CSS Document */
 
 .content-section{
-	margin:40px 0;
-	background-image: url("../images/shadow-2.png");
+	margin:40px 0 60px 0;
+	/*background-image: url("../images/shadow-2.png");
     background-repeat: no-repeat;
-	background-position:left 30px;
+	background-position:left 30px;*/
 	width:100%;
 }
 
 .content-section header{
 	color:#FFF;
 	/*background:#007DBE;*/
-	background:#333;
+	background:#2A72C7;
 	max-width:240px;
 	font-size:1.5em;
 	font-weight:bold;
 	margin:0 0 0 20px;
-	padding:5px 10px 5px 35px;
+	padding:5px 10px 5px 20px;
 	border-radius:10px 10px 0 0;
-	background-image:url(../images/icons/arr-down.jpg);
+	/*background-image:url(../images/icons/arr-down.jpg);
 	background-repeat:no-repeat;
-	background-position:10px center;
+	background-position:10px center;*/
 	text-shadow:0 -1px 1px rgba(0,0,0,.8);
+	border-bottom:1px solid #FFF;
 }
 
 .content-body{
 	background:#FFF;
-	border-radius:10px;	
+	border-top:1px solid #2A72C7;
+	/*border-radius:10px;*/	
 	color:#007DBE;
 	margin:0 0 0 0;
-	padding:20px;
+	padding:0 20px;
 }
 
 
@@ -44,8 +46,8 @@
 #tbl-view{
 	width:100%;
 	border:none;
-	font-size:.8em;
-	font-weight:bold;
+	font-size:1em;
+	font-weight:400;
 	margin:20px 0;
 }
 
@@ -75,10 +77,10 @@
 /*---------------------------------- Table Dynamic ----------------------------------*/
 
 #tbl-view.dynamic th{
-	font-size:1.5em;
-	font-weight:bold;
-	color:#0A3D70;
-	background:#EFEFEF;	
+	font-size:.9em;
+	font-weight:600;
+	color:#FFF;
+	background:#2A72C7;	
 }
 
 #tbl-view.dynamic th, #tbl-view.dynamic td{

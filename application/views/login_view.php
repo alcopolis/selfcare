@@ -1,5 +1,5 @@
 <div id="login">
-    <img src="<?=base_url();?>images/welcome.png" style="position:relative;" />
+    <img src="<?=base_url();?>images/innovate-welcome.jpg" style="position:relative;" />
     <?php 
         $form = array('name' => 'login-form', 'id' => 'login-form');
         echo form_open('login_control/login',$form);						
@@ -21,7 +21,7 @@
         <p><span class="tx-bold"><?=form_checkbox($remeber);?>Ingat Saya</span></p><br />
         <p>
             <?=form_submit($login)?> &nbsp;|&nbsp; 
-            <a href="<?=base_url()?>login_control/forgetpwd" class="tx-yellow tx-bold">Lupa Password?</a>
+            <a href="<?=base_url()?>login_control/forgetpwd" class="tx-bold" style="color:#39C">Lupa Password?</a>
         </p>
         
 		<p style="margin:20px 0 0 0; width:100%; padding:5px; color:#FF0"><?=isset($pesan) ? $pesan : ''?></p>

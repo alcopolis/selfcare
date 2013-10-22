@@ -4,6 +4,7 @@ $(function(){
 	
 	if($('#welcome').length > 0){
 		$('#user-menu').addClass('hide');	
+		$('.page').css('margin-top', '0');
 	}else{
 		$('#user-menu').removeClass('hide');
 	}
