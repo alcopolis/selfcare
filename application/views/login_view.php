@@ -1,5 +1,5 @@
 <div id="login">
-    <img src="<?=base_url();?>images/innovate-welcome.jpg" style="position:relative;" />
+    <img src="<?=base_url();?>images/innovate-welcome.png" style="position:relative;" />
     <?php 
         $form = array('name' => 'login-form', 'id' => 'login-form');
         echo form_open('login_control/login',$form);						
@@ -11,7 +11,7 @@
 		
     ?>
     
-     <div style="margin:0; padding:20px; border-left:1px solid rgba(255,255,255,.5);">
+     <div style="margin: -35px 0px 0px 0px; padding: 20px 20px 20px 5px; border-left:1px solid rgba(255,255,255,.5);">
     	<p class="tx-bold" style="margin-bottom:20px; line-height:1.25;">Masukkan ID dan password untuk mengelola layanan online Webselfcare Anda</p>
 		
     	<p><span class="tx-bold">ID Pelanggan</span> <br/> 
@@ -24,7 +24,7 @@
             <a href="<?=base_url()?>login_control/forgetpwd" class="tx-bold" style="color:#39C">Lupa Password?</a>
         </p>
         
-		<p style="margin:20px 0 0 0; width:100%; padding:5px; color:#FF0"><?=isset($pesan) ? $pesan : ''?></p>
+		<p style="margin:20px 0 0 0; width:100%; padding:5px; color:#F00"><?=isset($pesan) ? $pesan : ''?></p>
     </div>
     
     <?=form_close()?>

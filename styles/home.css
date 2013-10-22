@@ -5,13 +5,14 @@
 	background-image: url(../images/home.jpg);
 	background-position:center left;
 	background-repeat:no-repeat;
-	min-height:600px;	
+	min-height:600px;
+	margin: -120px 0px -40px 0px;	
 }
 
 #intro{
 	width:400px;
 	float:right;
-	margin-top:20px;	
+	margin-top:60px;	
 }
 
 #intro #user-menu{

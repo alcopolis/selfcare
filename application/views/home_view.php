@@ -1,10 +1,10 @@
         <div class="page">		
            <div id="welcome">
-				<h1 class="tx-medium tx-blue" style="margin:0; text-align:right; position:relative; top:120px; right:40px"><span class="tx-medium">Selamat Datang</span><br /> di layanan Webselfcare Anda</h1>
+				<h1 class="tx-medium tx-blue" style="margin:0; text-align:left; position:relative; top:135px; right:-649px">Selamat Datang di layanan<br /> Webselfcare Anda</h1>
 				
                 <div id="intro">
                     <div id="login-info" class="tx-black tx-bold" style="padding:10px 0; position:relative; top:140px; right:10px">
-                        <h3 style="margin:0 0 20px 20px;">Layanan ini memberikan Anda<span class="tx-blue"> kemudahan </span>untuk:</h3>
+                        <h3 style="margin: -28px 0 20px 41px;">Layanan ini memberikan Anda<span class="tx-blue"> kemudahan </span>untuk:</h3>
                         <ul style="font-size:0.8em;">
                             <ul>
                             <?php if ($this->client_cluster=="CIBUBUR"){ ?>

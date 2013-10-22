@@ -146,7 +146,7 @@ ul#ch-tab-head li:hover a, ul#ch-tab-head li.active a{
 	float:right;
 	padding:10px;
 	margin:0 20px 0 0;	
-	background:#EFEFEF; 
+	background:#FFFFFF; 
 	color:#666;
 	
 	border-radius:5px;
@@ -248,7 +248,7 @@ img.basic{
 
 .btn{
 	color:#666;
-	background-color:#EFEFEF;
+	background-color:#FFFFFF;
 	border-radius:5px;
 	padding:10px;
 	border:none;

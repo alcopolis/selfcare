@@ -29,17 +29,17 @@
     <div id="header">
         <div id="bar">
 			<div id="branding" class="left">
-                <a href="<?=base_url();?>login_control" title="Home"><img src="<?=base_url()?>images/logo.png"/></a>
+                <a href="http://innovate-indonesia.com/" title="Home"><img src="<?=base_url()?>images/logo.png"/></a>
             </div>
             <?php //print_r($this->session->userdata('logged')); ?>
             <?php $this->client_access = $this->session->userdata('aktif');?>
             <?php if($this->client_access=='1'){?>
             	<div id="logout" class="top-menu right"><a href="<?=base_url();?>logout" title="Log out">Log Out</a></div>
             	<?php if($this->session->userdata('logged') == 'stbgr9'){ ?>
-            		<div id="watch" class="top-menu right"><a href="<?=base_url();?>watch_control" title="Watch Online TV">Watch TV</a></div>
+            		<!--<div id="watch" class="top-menu right"><a href="<?//=base_url();?>watch_control" title="Watch Online TV">Watch TV</a></div>-->
             	<?php };?>
-            	<div id="selfcare" class="top-menu right"><a href="<?=base_url();?>login_control" title="Home Selfcare">Selfcare</a></div>
-                <div id="home" class="top-menu right"><a href="http://www.cepat.net.id" title="Home CEPATnet">CEPATnet</a></div>
+            	<div id="home" class="top-menu right"><a href="<?=base_url();?>login_control" title="Home Selfcare">Selfcare</a></div>
+                <!--<div id="selfcare" class="top-menu right"><a href="http://www.cepat.net.id" title="Home CEPATnet">CEPATnet</a></div>-->
             <?php }else{ ?>
 				<div id="selfcare" class="top-menu right"><a href="<?=base_url();?>login_control" title="Home Selfcare">Selfcare</a></div>
 				<div id="home" class="top-menu right"><a href="http://www.cepat.net.id" title="Home CEPATnet">Home</a></div>
